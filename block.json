@@ -1,0 +1,26 @@
+{
+    "apiVersion": 2,
+    "title": "Accordion",
+    "name": "aimtofeel/stichingvacinatieveiligheid-blocks",
+	"icon": "editor-kitchensink",
+	"category": "layout",
+	"attributes": {
+		"content": {
+            "type": "array",
+            "source": "children",
+			"selector": "p"
+		},
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		}
+	},
+	"example": {
+		"attributes": {
+			"content": "Dit is een accordion.",
+			"title": "Titel"
+		}
+	},
+    "editorScript": "file:./block.js"
+}
