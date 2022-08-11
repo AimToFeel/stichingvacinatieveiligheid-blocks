@@ -16,6 +16,18 @@
 			"source": "html",
 			"selector": "#attribute-title",
 			"default": "Titel"
+		},
+		"warning": {
+			"type": "string",
+			"source": "html",
+			"selector": "#attribute-warning"
+		},
+		"warningHidden": {
+			"type": "boolean",
+			"source": "attribute",
+			"selector": "#attribute-warning",
+			"attribute": "hidden",
+			"default": true
 		}
 	},
 	"example": {
