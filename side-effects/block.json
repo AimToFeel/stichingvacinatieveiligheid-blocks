@@ -1,0 +1,37 @@
+{
+    "apiVersion": 2,
+    "title": "Side effects CTA",
+    "name": "side-effects/stichingvacinatieveiligheid-blocks",
+	"icon": "editor-kitchensink",
+	"category": "aimtofeel",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "text",
+			"selector": "h3"
+		},
+		"description": {
+			"type": "string",
+			"source": "text",
+			"selector": "p"
+		},
+		"primaryButton": {
+			"type": "string",
+			"source": "text",
+			"selector": "a"
+		},
+		"primaryButtonLink": {
+			"type": "string",
+			"source": "text"
+		}
+	},
+	"example": {
+		"attributes": {
+			"title": "Bij dit vaccin zijn de volgende bijwerkingen gemeld:",
+			"description": "Reacties op de plek, vermoeidheid, hoofdpijn, niet lekker voelen, koorts, spierpijn, misselijkheid, braken, koude rillingen, diarree",
+			"primaryButton": "Meer over bijwerkingen",
+			"primaryButtonLink": "/bijwerkingen"
+		}
+	},
+    "editorScript": "file:./block.js"
+}

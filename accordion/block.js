@@ -4,10 +4,7 @@
   const RichText = editor.RichText;
   const useBlockProps = blockEditor.useBlockProps;
 
-  blocks.registerBlockType("aimtofeel/stichingvacinatieveiligheid-blocks", {
-    icon: "editor-kitchensink",
-    category: "layout",
-
+  blocks.registerBlockType("accordion/stichingvacinatieveiligheid-blocks", {
     attributes: {
       content: {
         type: "array",

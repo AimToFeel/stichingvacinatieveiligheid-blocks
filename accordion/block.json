@@ -1,9 +1,9 @@
 {
     "apiVersion": 2,
     "title": "Accordion",
-    "name": "aimtofeel/stichingvacinatieveiligheid-blocks",
+    "name": "accordion/stichingvacinatieveiligheid-blocks",
 	"icon": "editor-kitchensink",
-	"category": "layout",
+	"category": "aimtofeel",
 	"attributes": {
 		"content": {
             "type": "array",

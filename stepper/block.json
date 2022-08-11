@@ -1,0 +1,26 @@
+{
+    "apiVersion": 2,
+    "title": "Stepper",
+    "name": "stepper/stichingvacinatieveiligheid-blocks",
+	"icon": "editor-kitchensink",
+	"category": "aimtofeel",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"iterator": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
+	},
+	"example": {
+		"attributes": {
+			"content": "Content van de Stepper.",
+			"iterator": "1."
+		}
+	},
+    "editorScript": "file:./block.js"
+}

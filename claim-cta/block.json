@@ -1,0 +1,41 @@
+{
+    "apiVersion": 2,
+    "title": "Claim CTA",
+    "name": "claim-cta/stichingvacinatieveiligheid-blocks",
+	"icon": "editor-kitchensink",
+	"category": "aimtofeel",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "text",
+			"selector": "h3"
+		},
+		"secondaryButton": {
+			"type": "string",
+			"source": "text",
+			"selector": "a"
+		},
+		"primaryButton": {
+			"type": "string",
+			"source": "text",
+			"selector": "a"
+		},
+		"secondaryButtonLink": {
+			"type": "string",
+			"source": "text"
+		},
+		"primaryButtonLink": {
+			"type": "string",
+			"source": "text"
+		}
+	},
+	"example": {
+		"attributes": {
+			"title": "Wist je dat je bij ernstige aantoonbare bijwerkingen een claim kunt indienen?",
+			"secondaryButton": "Meer info",
+			"primaryButton": "Doe een claim",
+			"primaryButtonLink": "https://vaccinclaim.com"
+		}
+	},
+    "editorScript": "file:./block.js"
+}
