@@ -2,7 +2,7 @@
 /**
  * Plugin name: Stichtingvacinatieveiligheid Editor Blocks
  * Description: Adds some custom blocks to be used on pages.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: AimToFeel
  * Author URI: https://aimtofeel.com
  * License: GPLv2
