@@ -8,12 +8,12 @@
 		"content": {
 			"type": "string",
 			"source": "html",
-			"selector": "p"
+			"selector": "#attribute-content"
 		},
 		"iterator": {
 			"type": "string",
 			"source": "html",
-			"selector": "p"
+			"selector": "#attribute-iterator"
 		}
 	},
 	"example": {

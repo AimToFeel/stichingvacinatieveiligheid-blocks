@@ -8,25 +8,29 @@
 		"title": {
 			"type": "string",
 			"source": "text",
-			"selector": "h3"
+			"selector": "#attribute-title"
 		},
 		"secondaryButton": {
 			"type": "string",
 			"source": "text",
-			"selector": "a"
+			"selector": "#attribute-secondary-button"
 		},
 		"primaryButton": {
 			"type": "string",
 			"source": "text",
-			"selector": "a"
+			"selector": "#attribute-primary-button"
 		},
 		"secondaryButtonLink": {
 			"type": "string",
-			"source": "text"
+			"source": "attribute",
+			"selector": "#attribute-secondary-button",
+			"attribute": "href"
 		},
 		"primaryButtonLink": {
 			"type": "string",
-			"source": "text"
+			"source": "attribute",
+			"selector": "#attribute-primary-button",
+			"attribute": "href"
 		}
 	},
 	"example": {

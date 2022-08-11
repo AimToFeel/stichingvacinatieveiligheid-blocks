@@ -22,12 +22,14 @@
         [
           el(
             'div',
-            useBlockProps({style: {
-              display: 'flex',
-              'flex-direction': 'row',
-              'align-items': 'center',
-              margin: 0,
-            }}),
+            useBlockProps({
+              style: {
+                display: 'flex',
+                'flex-direction': 'row',
+                'align-items': 'center',
+                margin: 0,
+              }
+            }),
             el(
               RichText,
               useBlockProps({
@@ -43,6 +45,7 @@
                   props.setAttributes({ iterator: newContent });
                 },
                 value: iterator,
+                id: 'attribute-iterator'
               })
             ),
           ),
@@ -69,6 +72,7 @@
                   props.setAttributes({ content: newContent });
                 },
                 value: content,
+                id: 'attribute-content'
               })
             ),
           ),
@@ -77,6 +81,9 @@
     },
 
     save: function (props) {
+      const content = props.attributes.content ?? __("Content van de Stepper.");
+      const iterator = props.attributes.iterator ?? __('1.');
+
       return el(
         "section",
         useBlockProps.save({
@@ -92,8 +99,9 @@
               "p",
               useBlockProps.save({
                 class: "stepper__iterator",
+                id: 'attribute-iterator'
               }),
-              props.attributes.iterator
+              iterator
             ),
           ),
           el(
@@ -105,8 +113,9 @@
               "p",
               useBlockProps.save({
                 class: "stepper__content",
+                id: 'attribute-content'
               }),
-              props.attributes.content
+              content
             ),
           ),
         ]

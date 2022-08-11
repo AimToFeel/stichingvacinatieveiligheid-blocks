@@ -52,6 +52,7 @@
                 props.setAttributes({ title: newContent });
               },
               value: title,
+              id: 'attribute-title'
             })
           ),
           el(
@@ -71,6 +72,7 @@
                   props.setAttributes({ content: newContent });
                 },
                 value: content,
+                id: 'attribute-content'
               })
             )
           ),
@@ -95,6 +97,7 @@
                 "h2",
                 useBlockProps.save({
                   class: "accordion__title",
+                  id: 'attribute-title'
                 }),
                 props.attributes.title
               ),
@@ -116,6 +119,7 @@
               "div",
               useBlockProps.save({
                 class: "page__content",
+                id: 'attribute-content'
               }),
               el(
                 RichText.Content,

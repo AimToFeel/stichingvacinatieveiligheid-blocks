@@ -67,6 +67,7 @@
                 props.setAttributes({ title: newContent });
               },
               value: title,
+              id: 'attribute-title'
             }),
           ),
           el(
@@ -84,6 +85,7 @@
                 props.setAttributes({ description: newContent });
               },
               value: description,
+              id: 'attribute-description'
             }),
           ),
           el(
@@ -112,6 +114,7 @@
                     props.setAttributes({ primaryButton: newContent });
                   },
                   value: primaryButton,
+                  id: 'attribute-primary-button'
                 })
               ),
             ]
@@ -136,6 +139,7 @@
             "h3",
             useBlockProps.save({
               class: "side-effects__title",
+              id: 'attribute-title'
             }),
             title
           ),
@@ -143,6 +147,7 @@
             "p",
             useBlockProps.save({
               class: "side-effects__description",
+              id: 'attribute-description'
             }),
             description
           ),
@@ -156,7 +161,8 @@
                 "a",
                 useBlockProps.save({
                   class: "side-effects__button",
-                  href: primaryButtonLink
+                  href: primaryButtonLink,
+                  id: 'attribute-primary-button'
                 }),
                 primaryButton
               ),

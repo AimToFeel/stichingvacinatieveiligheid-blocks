@@ -8,21 +8,23 @@
 		"title": {
 			"type": "string",
 			"source": "text",
-			"selector": "h3"
+			"selector": "#attribute-title"
 		},
 		"description": {
 			"type": "string",
 			"source": "text",
-			"selector": "p"
+			"selector": "#attribute-description"
 		},
 		"primaryButton": {
 			"type": "string",
 			"source": "text",
-			"selector": "a"
+			"selector": "#attribute-primary-button"
 		},
 		"primaryButtonLink": {
 			"type": "string",
-			"source": "text"
+			"source": "attribute",
+			"selector": "#attribute-primary-button",
+			"attribute": "href"
 		}
 	},
 	"example": {

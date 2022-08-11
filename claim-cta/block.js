@@ -48,7 +48,7 @@
                     onChange: (newContent) => {
                       props.setAttributes({ secondaryButtonLink: newContent });
                     },
-                    value: secondaryButtonLink,
+                    value: secondaryButtonLink
                   })
                 ),
                 el(
@@ -78,6 +78,7 @@
                 props.setAttributes({ title: newContent });
               },
               value: title,
+              id: 'attribute-title'
             }),
           ),
           el(
@@ -106,6 +107,7 @@
                     props.setAttributes({ secondaryButton: newContent });
                   },
                   value: secondaryButton,
+                  id: 'attribute-secondary-button'
                 })
               ),
               el(
@@ -124,6 +126,7 @@
                     props.setAttributes({ primaryButton: newContent });
                   },
                   value: primaryButton,
+                  id: 'attribute-primary-button'
                 })
               ),
             ]
@@ -149,6 +152,7 @@
             "h3",
             useBlockProps.save({
               class: "claim-cta__title",
+              id: 'attribute-title'
             }),
             title
           ),
@@ -162,7 +166,8 @@
                 "a",
                 useBlockProps.save({
                   class: "claim-cta__button claim-cta__button--secondary",
-                  href: secondaryButtonLink
+                  href: secondaryButtonLink,
+                  id: 'attribute-secondary-button'
                 }),
                 secondaryButton
               ),
@@ -170,7 +175,8 @@
                 "a",
                 useBlockProps.save({
                   class: "claim-cta__button",
-                  href: primaryButtonLink
+                  href: primaryButtonLink,
+                  id: 'attribute-primary-button'
                 }),
                 primaryButton
               ),

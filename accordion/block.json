@@ -8,12 +8,14 @@
 		"content": {
             "type": "array",
             "source": "children",
-			"selector": "p"
+			"selector": "#attribute-content",
+			"default": "Dit is een accordion."
 		},
 		"title": {
 			"type": "string",
 			"source": "html",
-			"selector": "h2"
+			"selector": "#attribute-title",
+			"default": "Titel"
 		}
 	},
 	"example": {
