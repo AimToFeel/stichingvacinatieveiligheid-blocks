@@ -142,7 +142,7 @@
               el(
                 "h2",
                 useBlockProps.save({
-                  class: "accordion__title",
+                  class: "accordion__title" + (!warningHidden ? ' accordion__title--with-warning' : ''),
                   id: 'attribute-title'
                 }),
                 title
